@@ -1,4 +1,4 @@
-# enterprise-security-assessment
+# Enterprise Security Assessment — Waffarah E-Commerce Platform
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow"/>
@@ -10,39 +10,67 @@
 |---|---|
 | **Author** | Joud Alhussain |
 | **Date** | Aug 2026 |
-| **Methodology** | [e.g. OWASP Testing Guide / ISO 27005 / NIST] |
-| **Tools Used** | [e.g. Nmap, Nessus, Wazuh] |
+| **Methodology** | OWASP Testing Guide (OWASP Top 10 focus) |
+| **Tools Used** | Nmap, Nessus, OWASP Juice Shop |
 | **Report** | [PDF Report](#) |
 
 ---
 
 ## 📋 Project Overview
-A concise, one-paragraph summary of what this project is and what it demonstrates — written so a recruiter skimming for 30 seconds understands the value immediately.
+This project simulates a consultant-style black-box security assessment of Waffarah, a fictional mid-size e-commerce company, ahead of a compliance audit. 
+The assessment identifies and validates vulnerabilities in the customer-facing web application, scores them by risk, and delivers a remediation roadmap in the same format a professional security consultancy would provide to a paying client.
 
 ## 🏢 Business Scenario
-The fictional (or anonymized real) organization this engagement was performed for — its industry, size, and why this work mattered to it.
+Waffarah is a mid-size e-commerce company (~150 employees) handling customer orders and payment data. Ahead of an upcoming regulatory compliance audit, Waffarah's leadership engaged an external security consultant to independently assess their web application for vulnerabilities that could expose customer data or damage the business.
 
 ## 🎯 Objectives
-- Objective 1
-- Objective 2
-- Objective 3
+- Identify exploitable vulnerabilities in Waffarah's customer-facing web application
+- Validate findings with evidence (not just automated scan output)
+- Score each finding by likelihood and business impact
+- Deliver a prioritized, business-readable remediation roadmap
 
 ## 🔍 Scope
-**In scope:**
-- Item 1
 
-**Out of scope:**
-- Item 1
+**Client:** Waffarah — a mid-size e-commerce company (~150 employees) 
+processing customer orders and payment data.
+
+**Target of Assessment:** Waffarah's customer-facing web application 
+(simulated using OWASP Juice Shop, a deliberately vulnerable app used 
+here to stand in for the client's real platform).
+
+**Testing Type:** Black-box (no prior access to source code or credentials — 
+testing performed as an external, unauthenticated attacker would).
+
+**Testing Window:** [Insert your actual start–end date
+
+**In Scope:**
+- Web application functionality (login, search, checkout, product reviews)
+- API endpoints exposed by the application
+- Session and authentication mechanisms
+
+**Out of Scope:**
+- Denial-of-Service (DoS) testing
+- Social engineering or phishing
+- Physical security testing
+- Any infrastructure outside the deployed Juice Shop instance
+
+**Authorization:** This assessment was conducted with the full knowledge 
+and authorization of Waffarah  management, under a signed (fictional) 
+engagement agreement, strictly for portfolio and educational purposes.
 
 ## 🧭 Methodology
-The framework and approach followed, and why it was chosen.
+This assessment follows the OWASP Testing Guide, with findings mapped against the OWASP Top 10. Testing proceeds in four stages: 
+1- reconnaissance and scanning.
+2- manual validation of scan results.
+3- risk scoring 
+4- business-impact reporting.
 
 ## 🖥️ Environment
 | Component | Detail |
 |---|---|
-| Target | [e.g. OWASP Juice Shop] |
-| Attacker system | [e.g. Kali Linux] |
-| Network | [e.g. isolated NAT lab] |
+| Target | OWASP Juice Shop (Docker) — standing in for Waffarah's platform |
+| Attacker system | Kali Linux |
+| Network | Isolated NAT lab (host-only network, no external exposure) |
 
 ## ⚙️ Execution
 A clear, chronological walkthrough of what was actually done — commands, steps, evidence captured.
