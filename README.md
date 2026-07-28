@@ -1,4 +1,4 @@
-# [Project Name]
+# enterprise-security-assessment
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow"/>
@@ -9,7 +9,7 @@
 | | |
 |---|---|
 | **Author** | Joud Alhussain |
-| **Date** | [Month Year] |
+| **Date** | Aug 2026 |
 | **Methodology** | [e.g. OWASP Testing Guide / ISO 27005 / NIST] |
 | **Tools Used** | [e.g. Nmap, Nessus, Wazuh] |
 | **Report** | [PDF Report](#) |
