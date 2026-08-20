@@ -12,7 +12,7 @@
 | **Date** | August 2026 |
 | **Methodology** | OWASP Testing Guide (OWASP Top 10 focus) |
 | **Tools Used** | Nmap, curl, Chrome DevTools, OWASP Juice Shop |
-| **Report** | [PDF Report](./report) |
+| **Report** | [PDF Report](./report/Waffarah_Enterprise_Security_Assessment_Report.pdf) |
 
 ---
 
@@ -246,7 +246,7 @@ The assessment identified a critical vulnerability chain originating from a SQL 
 
 ## 📎 Repository Resources
 
-- 📄 [Full PDF Report](./report)
+- 📄 [Full PDF Report](./report/Waffarah_Enterprise_Security_Assessment_Report.pdf)
 - 💼 [LinkedIn Post](#)
 - 🖼️ [Screenshots / Evidence](./evidence)
 
